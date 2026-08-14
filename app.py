@@ -29,6 +29,8 @@ def dividir(val1, val2):
         return "Erro: Divisão por zero não é permitida."
     return val1 / val2
 
+#Estrutura da Calculadora
+
 def calculadora():
     while True:
         print("\n=== MINHA CALCULADORA CHIQUE")
@@ -37,6 +39,8 @@ def calculadora():
         print("3. Multiplicação (*)")
         print("4. Divisão (/)")
         print("0. Sair")
+
+# Escolha da opção do cálculo matemático
         
         opcao = input("\nEscolha uma opção (0-4): ")
         
@@ -51,6 +55,9 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite apenas números.")
                 continue
+            #para resultado com número inteiro
+                #num1 = int(input("Digite o primeiro número: "))
+                #num2 = int(input("Digite o segundo número: "))
 
             if opcao == '1':
                 resultado = somar(num1, num2)
